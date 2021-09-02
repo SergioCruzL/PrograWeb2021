@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <title>Ejemplo de formulario</title>
+    </head>
+    <body>
+        <form method="GET" name="formulario1">
+            <table border="0" cellpadding="5" align="center" width="700">
+                <tr style="background-color: darkcyan;">
+                    <td colspan="3" align="center">
+                        <big>Entrada nueva factura</big>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Número de factura: <input type="text" name="txtNumFactura" size="10" maxlength="5">
+                    </td>
+                    <td colspan="2" align="center">
+                        Fecha de factura: <input type="date" name="dateFechaFactura" size="10" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Número de pedido: <input type="text" name="txtNumPedido" size="10" maxlength="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Cliente: <input type="text" name="txtCliente" size="50" maxlength="30">
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                        Importe: <input type="text" name="txtImporte" size="10" maxlength="10">
+                    </td>
+                    <td>
+                        IVA: <input type="text" name="txtIVA" size="10" maxlength="10">
+                    </td>
+                    <td>
+                        Total: <input type="text" name="txtTotal" size="10" maxlength="10">
+                    </td>  
+                </tr>
+                <tr>
+                     <td>
+                        Beneficios: <input type="text" name="txtBeneficios" size="10" maxlength="10">
+                    </td>
+                    <td>
+                        Costos: <input type="text" name="txtCostos" size="10" maxlength="10">
+                    </td>
+                    <td>
+                        % Beneficios: <input type="text" name="txtPorcBeneficios" size="10" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tipo de trabajo: 
+                        <SELEct name="tipoTrabajo" size="1">
+                            <OPTION selected>      </OPTION>
+                            <OPTION>Intelectual</OPTION>
+                            <OPTION>Artesanal</OPTION>
+                            <OPTION>Manual</OPTION>
+                        </SELEct>
+                    </td>
+                    <td colspan="2" align="center">
+                        Forma de pago: 
+                        <SELEct name="formaPago" size="1">
+                            <OPTION selected>     </OPTION>
+                            <OPTION>Efectivo</OPTION>
+                            <OPTION>Tarjeta</OPTION>
+                        </SELEct>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Observaciones: 
+                        <textarea name="comentario" rows="3 "cols="70">
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Guardar y salir">
+                    </td align="center">
+                    <td>
+                        <input type="reset" value="Salir sin guardar">
+                    </td>
+                    <td align="center">
+                        <input type="submit" value="Guardar y continuar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

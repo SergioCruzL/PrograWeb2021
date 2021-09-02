@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <title>Ejemplos de formularios</title>
+    </head>
+    <body>
+        <form method="GET" name="formulario">
+        <table border="1" cellpadding="5" align="center" width="700">
+            <tr>
+                <td  colspan="2" align="center">
+                    Formulario de contacto
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <img src="images/header-formulario.jpg" width="700">
+                </td>                      
+            </tr>
+            <tr>
+                <td>
+                    Nombre:
+                </td>
+                <td>
+                    <input type="text" name="txtNombre" size="35" maxlength="30" placeholder="Introduce tu nombre"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Apellidos:
+                </td>
+                <td>
+                    <input type="text" name="txtApellidos" size="35" maxlength="30" placeholder="Introduce tus apellidos"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Domicilio:
+                </td>
+                <td>
+                    <input type="text" name="txtDomicilio" size="35" maxlength="30" placeholder="Introduce tu domicilio"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Intereses
+                </td>
+                <td>
+                    Ajedrez:<input type="checkbox" name="checkIntereses" checked="true" value="Ajedrez">
+                    Internet:<input type="checkbox" name="checkInternet" value="Internet">
+                    Autos:<input type="checkbox" name="checkAutos" value="Autos">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sexo:
+                </td>
+                <td>
+                    Hombre:<input type="radio" name="btnSexo" value="Hombre">
+                    Mujer:<input type="radio" name="btnSexo" value="Mujer">
+                    No seleccionar:<input type="radio" name="btnSexo" value="No seleccionado">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Seleccione su estado:
+                </td>
+                <td>
+                    <SELEct name="Estado" size="1">
+                        <OPTION selected>Oaxaca</OPTION>
+                        <OPTION>Puebla</OPTION>
+                        <OPTION>CDMX</OPTION>
+                    </SELEct>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dejanos tu comentario:
+                </td>
+                <td>
+                    <textarea name="comentario" cols="35" rows="5">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Campo oculto:
+                </td>
+                <td>
+                    <input type="hidden" name="campoOculto" value="pagina1">
+                    <fieldset>
+                        <legend>Información personal</legend>
+                        Nombre:<input type="text" name="txtNom" size="20" maxlength="30" placeholder="Introduce tu nombre"> 
+                        Apellidos:<input type="text" name="txtApe" size="20" maxlength="30" placeholder="Introduce tus apellidos"> 
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="reset" name="Borrar formulario" value="Borrar formulario">
+                </td>
+                <td align="center">
+                    <input type="submit" value="Enviar información">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>

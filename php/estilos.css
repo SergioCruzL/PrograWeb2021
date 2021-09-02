@@ -1,0 +1,65 @@
+*{
+
+}
+
+body{
+    background-color: lightsteelblue;
+}
+
+.wrapper{
+    max-width: 900px;
+    margin: 5% auto;
+}
+
+h1{
+    text-align: center;
+    color: royalblue;
+}
+
+.form-area{
+    display: flex;
+    background-color: lightslategray;
+    padding: 2em;
+    border-radius: 15px;
+}
+
+.mensaje-area{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.mensaje-area textarea{
+    flex 1;
+    min-width: 18em;
+    padding: 18px;
+    height: 100%;
+}
+
+.detalles-area{
+    flex: 1;
+    order: 1;
+    margin-right: 20px;
+}
+
+.detalles-area input{
+    width: 100%;
+}
+
+.detalles-area input, .detalles-area button{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.detalles-area button{
+    background-color: navy;
+    color: white;
+    border: 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+label{
+    color: navy;
+    text-transform: uppercase;
+}
